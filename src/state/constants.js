@@ -1,0 +1,4 @@
+export const DEL_HERO_FROM_TEAM = 'DEL_HERO_FROM_TEAM';
+export const ADD_HERO_TO_TEAM = 'ADD_HERO_TO_TEAM';
+export const SET_RESULTS_HERO_API = 'SET_RESULTS_HERO_API';
+export const SIGN_IN = 'SIGN_IN';
