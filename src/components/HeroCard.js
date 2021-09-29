@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import HeroDesc from './HeroDesc';
 import HeroStats from './HeroStats';
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { addHeroToTeam } from '../state/action-creators/teamActions';
 

@@ -7,8 +7,6 @@ import Team from "./components/Team";
 import './App.css';
 import { useSelector } from 'react-redux';
 
-// - no tiene servicios para peticiones http
-
 function App() {
 
   const logoComp = <img className='img-fluid mt-4 w-50' style={{ maxWidth: '30rem' }} src={logo} alt='SuperHero team picker' />;
@@ -22,16 +20,17 @@ function App() {
       ?
       <Router>
         <NavBar />
-        <div className='d-flex flex-column align-items-center justify-content-center'>           <Switch>
-          <Route exact path="/" render={() => <Redirect to="/addHero" />} />
-          <Route exact path="/superhero_team" render={() => <Redirect to="/addHero" />} />
-          <Route path="/addHero">
-            {logoComp} <AddHeroForm />
-          </Route>
-          <Route path="/team">
-            {logoComp} <Team />
-          </Route>
-        </Switch>
+        <div className='d-flex flex-column align-items-center justify-content-center'>
+          <Switch>
+            <Route exact path="/" render={() => <Redirect to="/addHero" />} />
+            <Route exact path="/superhero_team" render={() => <Redirect to="/addHero" />} />
+            <Route path="/addHero">
+              {logoComp} <AddHeroForm />
+            </Route>
+            <Route path="/team">
+              {logoComp} <Team />
+            </Route>
+          </Switch>
         </div>
       </Router>
       :
